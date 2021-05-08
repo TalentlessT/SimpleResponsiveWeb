@@ -1,0 +1,77 @@
+@import '_colors'
+
+body
+    margin: 0
+    font-family: 'Poppins', sans-serif
+    
+
+header
+    background-color: $RedColor
+    font-weight: 500
+    .header-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 70%
+        margin: auto
+        min-height: 10vh
+        color: $WhiteColor
+        nav ul
+            display: flex
+            list-style-type: none
+            li a
+                color: $WhiteColor
+                padding: 0 25px
+                text-decoration: none
+                text-transform: uppercase
+            
+
+.main
+    height: 85vh
+    background-image: url('/images/nightsky.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    .content
+        position: fixed
+        color: $WhiteColor
+        z-index: 1
+        position: absolute
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+        text-align: center
+        margin-top: 18vh
+        font-weight: 900
+        font-size: 2rem
+        h1
+            text-transform: uppercase
+            letter-spacing: 10px
+        button
+            background-color: transparent
+            color: $WhiteColor
+            border: 2px solid $RedColor
+            font-size: 1.5rem
+            padding: 1rem 4rem
+            border-radius: 40px
+        button:hover
+            background-color: $RedColor
+            transition: .3s
+            cursor: pointer
+        
+
+.main::after
+    content: ""
+    background-color: $TransparentBlack
+    height: 85vh
+    width: 100%  
+    position: absolute
+
+footer
+    height: 5vh
+    background-color: $blackColor
+    color: $WhiteColor
+    font-weight: 500
+    display: flex
+    justify-content: space-around
+    align-items: center

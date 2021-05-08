@@ -1,1 +1,106 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #E84855;
+  font-weight: 500;
+}
+
+header .header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 70%;
+  margin: auto;
+  min-height: 10vh;
+  color: #F0F7EE;
+}
+
+header .header-wrap nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header .header-wrap nav ul li a {
+  color: #F0F7EE;
+  padding: 0 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main {
+  height: 85vh;
+  background-image: url("/images/nightsky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .content {
+  position: fixed;
+  color: #F0F7EE;
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 18vh;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.main .content h1 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.main .content button {
+  background-color: transparent;
+  color: #F0F7EE;
+  border: 2px solid #E84855;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  border-radius: 40px;
+}
+
+.main .content button:hover {
+  background-color: #E84855;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.main::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+}
+
+footer {
+  height: 5vh;
+  background-color: #000000;
+  color: #F0F7EE;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
