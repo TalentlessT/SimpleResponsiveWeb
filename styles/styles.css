@@ -3,6 +3,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.active {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+}
+
 header {
   background-color: #E84855;
   font-weight: 500;
@@ -71,7 +76,12 @@ header .header-wrap nav ul li a {
   border: 2px solid #E84855;
   font-size: 1.5rem;
   padding: 1rem 4rem;
-  border-radius: 40px;
+  border-radius: 50px;
+}
+
+.main .content button a {
+  text-decoration: none;
+  color: #F0F7EE;
 }
 
 .main .content button:hover {
@@ -90,17 +100,23 @@ header .header-wrap nav ul li a {
 }
 
 footer {
-  height: 5vh;
   background-color: #000000;
   color: #F0F7EE;
   font-weight: 500;
+}
+
+footer .footer-wrap {
+  height: 5vh;
+  max-width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */

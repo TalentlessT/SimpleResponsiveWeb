@@ -4,6 +4,9 @@ body
     margin: 0
     font-family: 'Poppins', sans-serif
     
+.active
+    text-decoration: underline !important
+    text-decoration-thickness: 3px !important
 
 header
     background-color: $RedColor
@@ -53,7 +56,10 @@ header
             border: 2px solid $RedColor
             font-size: 1.5rem
             padding: 1rem 4rem
-            border-radius: 40px
+            border-radius: 50px
+            a
+                text-decoration: none
+                color: $WhiteColor
         button:hover
             background-color: $RedColor
             transition: .3s
@@ -68,10 +74,13 @@ header
     position: absolute
 
 footer
-    height: 5vh
     background-color: $blackColor
     color: $WhiteColor
     font-weight: 500
-    display: flex
-    justify-content: space-around
-    align-items: center
+    .footer-wrap
+        height: 5vh
+        max-width: 70%
+        display: flex
+        margin: auto
+        align-items: center
+        justify-content: space-between
