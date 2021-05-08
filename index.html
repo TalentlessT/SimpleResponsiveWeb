@@ -25,9 +25,28 @@
                     <li><a href="">faq</a></li>
                 </ul>
             </nav>
+            
+            
+            <div class="menu" onclick="toggleMenu()">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
 
+            
         </div>
     </header>
+
+    <div class="mobile-menu" id="mobile-menu" style="right: -100%;">
+        <nav>
+            <ul>
+                <li><a href="" class="active">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">faq</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <section class="main">
         <div class="content">
@@ -38,10 +57,12 @@
 
     <footer>
         <div class="footer-wrap">
-            2021 &copy;
+            <p>2021 &copy;</p>
             <p>jan horák.</p>
         </div>
     </footer>
+    
+    <script src="menu.js"></script>
 </body>
 
 </html>
